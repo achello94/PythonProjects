@@ -1,0 +1,89 @@
+
+"""
+=================================================================
+                 Twitter - Sentiment Analysis
+=================================================================
+
+"""
+
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+
+def strip_punctuation(string):
+    for char in punctuation_chars:
+        if char in string:
+            string = string.replace(char, "")
+    return string
+
+def get_pos(string):
+    string = strip_punctuation(string)
+    string = string.split(" ")
+    pos = 0
+    for word in positive_words:
+        if word in string:
+            pos +=1
+    return pos
+
+def get_neg(string):
+    string = strip_punctuation(string)
+    string = string.strip().lower().split(" ")
+    neg = 0
+    for word in negative_words:
+        if word in string:
+             neg +=1
+    return neg
+
+# lists of words to use
+positive_words = []
+with open("positive_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            positive_words.append(lin.strip())
+
+
+negative_words = []
+with open("negative_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            negative_words.append(lin.strip())
+
+#Data Analysis
+
+with open("project_twitter_data.csv","r") as twitter_data:
+    
+    #Headers
+    headers = "Number of Retweets", " Number of Replies", " Positive Score", " Negative Score", " Net Score"
+    
+    #Raw data for arrays
+    body = twitter_data.readlines()[1:]
+    tweets, rt_count, reply_count = [], [], []
+    for i in body:
+        tweets.append(i.strip().split(",")[0])
+        rt_count.append(i.strip().split(",")[1])
+        reply_count.append(i.strip().split(",")[2])
+        
+    #Get positive score
+    positive_score = []
+    for i in tweets:
+        positive_score.append(get_pos(i))
+        
+    #Get negative score
+    negative_score = []
+    for i in tweets:
+        negative_score.append(get_neg(i))
+        
+    #Net score
+    net_score = []
+    for i in tweets:
+        net_score.append(get_pos(i) - get_neg(i))
+
+#Writing data onto a CSV
+outfile = open("resulting_data.csv","w")
+# output the header row
+outfile.write(headers)
+outfile.write('\n')
+# output each of the rows:
+for i in range(0, len(tweets)):
+    row_string = '{},{},{}, {}, {}'.format(rt_count[i], reply_count[i], positive_score[i], negative_score[i], net_score[i])
+    outfile.write(row_string)
+    outfile.write('\n')
+outfile.close()
