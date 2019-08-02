@@ -70,7 +70,7 @@ for i in range (2, 6):
     count +=1
 
 
-    #Extremely inelegant solution for moving the turtle
+    
     if count in first:
         x = x / 2
 
@@ -160,7 +160,7 @@ for i in range (2, 6):
     count +=1
 
 
-    #Extremely inelegant solution for moving the turtle
+    
     if count in first:
         x = x / 2
 
@@ -249,7 +249,7 @@ for i in range (2, 6):
     count +=1
 
 
-    #Extremely inelegant solution for moving the turtle
+    
     if count in first:
         x = x / 2
 
