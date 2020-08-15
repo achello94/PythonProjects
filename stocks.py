@@ -31,7 +31,7 @@ def populateItems():
     #delete all the image files
     os.system("find . -name \*.ppm -delete")
     for ticker in tickers:
-        api_request = requests.get("" + ticker + "")
+        api_request = requests.get("https://cloud.iexapis.com/stable/stock/" + ticker + "/quote?token=pk_e935ffae61e240c3bf4842f57b1dcabd")
         api = json.loads(api_request.content)
         items.append("{}: {}".format(ticker, api.price))
 
