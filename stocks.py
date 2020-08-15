@@ -1,7 +1,8 @@
 import os, time, threading, random
-import feedparser
+import json
 from PIL import Image, ImageFont, ImageDraw
 from random import shuffle
+Import requests
 
 BITLY_ACCESS_TOKEN="BITLY_ACCESS_TOKEN"
 items=[]
