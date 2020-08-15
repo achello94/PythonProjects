@@ -33,13 +33,13 @@ def populateItems():
     for ticker in tickers:
         api_request = requests.get("" + ticker + "")
         api = json.loads(api_request.content)
-        items.append(api.price)
+        items.append("{}: {}".format(ticker, api.price))
 
 def createLinks():
     try:
         populateItems()
         for idx, item in enumerate(items):
-            writeImage(unicode(item["title"]), idx)
+            writeImage(item, idx)
     except ValueError:
         print("Bummer :( I couldn't make you 'dem links :(")
     finally:
