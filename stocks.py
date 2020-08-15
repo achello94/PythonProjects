@@ -33,7 +33,7 @@ def populateItems():
     for ticker in tickers:
         api_request = requests.get("https://cloud.iexapis.com/stable/stock/" + ticker + "/quote?token=pk_e935ffae61e240c3bf4842f57b1dcabd")
         api = json.loads(api_request.content)
-        items.append("{}: {}".format(ticker, api.price))
+        items.append("{}: {}".format(ticker, api["latestPrice"]))
 
 def createLinks():
     try:
