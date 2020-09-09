@@ -1,11 +1,48 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-}
+
 
 h1 {
     text-align: center;
+    padding: 20px;
 }
+
+
+
+.navbar-brand  {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top:0;
+    margin-bottom: 0;
+    line-height: .75;
+    clear: both;
+}
+
+.navbar  {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar  .navbar-brand{
+    text-align: center;
+    margin: 30px;
+    padding: 0;
+    
+}
+
+.navbar-collapse .navbar-nav .nav-item{
+    border: 1px solid black;
+    background:white;
+    color: black;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link{
+
+    color: black;
+}
+
+
 
 .block {
     border:2px solid black;
@@ -18,6 +55,7 @@ h1 {
 
 p {
     width: 90%;
+    font-size:16px;
     /* used to center the p tage inside a block level element */
     margin-right: auto;
     margin-left: auto;
@@ -26,68 +64,32 @@ p {
 
 #Chicken{
     font-weight: bold;
-    background-color:pink;
     width: 100px;
     text-align: center;
-    border: 2px solid black;
-    float: right;
-    margin-bottom: 5px;
-    margin-top: -2px;
-    margin-right: -2px;
+    padding-top:10px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
 #Beef{
-    background-color:rgb(197, 24, 24);
     width: 100px;
     text-align: center;
-    border: 2px solid black;
-    color: white;
-    float: right;
-    margin-bottom: 5px;
-    margin-top: -2px;
-    margin-right: -2px;
+    margin-right: auto;
+    margin-left: auto;
     font-weight: bold;
+    padding-top:10px;
+
 
 }
 
 #Sushi{
-    background-color: rgb(237, 226, 121);
     width: 100px;
     text-align: center;
-    border: 2px solid black;
-    float: right;
-    margin-bottom: 5px;
-    margin-top: -2px;
-    margin-right: -2px;
+    padding-top:10px;
+
+    margin-right: auto;
+    margin-left: auto;
     font-weight: bold;
 
-}
-
-.row {
-    width: 100%;
-}
-
-@media (min-width: 992px){
-    .col-lg-4 {
-        float:left;
-        width: 33%;
-
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .col-md-6, .col-md-12 {
-        float: left;
-
-    }
-    
-    .col-md-6 {
-        width: 50%;
-    }
-    
-    .col-md-12{
-        width: 100%;
-    }
 }
