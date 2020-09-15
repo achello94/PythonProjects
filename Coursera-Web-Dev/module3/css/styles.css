@@ -1,4 +1,5 @@
 
+
 h1 {
     text-align: center;
     padding: 20px;
@@ -40,7 +41,7 @@ h1 {
 
     .navbar-collapse .navbar-nav .nav-item .nav-link{
 
-        color: white;
+        color: #343a40;
     }
 
 }
