@@ -1,0 +1,355 @@
+
+
+body {
+    font-size: 16px;
+}
+
+.projects p {
+    padding: 20px 0 0 20px;
+    font-size: 26px;
+    font-style: bold;
+}
+
+h5 {
+    font-size:26px;
+    font-style: bold;
+}
+
+.carousel-caption {
+    background-color: white;
+    color: black;
+}
+
+.jumbotron {
+
+    padding: 0;
+    
+  }
+.jumbotron {
+    position: relative;
+}
+
+
+
+
+
+
+.navbar .navbar-brand, .navbar {
+    color: white;
+}
+
+.container-grid {
+    display: grid;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    column-gap: 30px;
+    row-gap: 20px; 
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item {
+    background-color: white;
+    color: black;
+    text-align: center;
+    width:350px;
+}
+
+.grid-title {
+    background-color: white;
+    color: black;
+    font-size: 26px;
+    font-weight: 500;
+    grid-column: span 4;
+   
+}
+
+.grid-title p {
+    text-align: left;
+}
+
+.grid-item.grid-project-1, .grid-item.grid-project-2, .grid-item.grid-project-3, .grid-item.grid-project-4 {
+    height:500px;
+    border: 1px solid lightgrey;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.bg-light {
+    background-color: #1abc9c!important;
+    color:white !important;
+}
+
+.nav-link {
+    color:white !important;
+}
+
+.project-body .identifier{
+    text-align: left;
+    display: block;
+    padding-top: 10px;
+
+}
+
+hr {
+    margin:5px;
+}
+
+.project-body .title{
+    font-weight: 500;
+    text-align: left;
+    display: block;
+}
+
+.project-body .text{
+    text-align: left;
+    color: gray;
+}
+
+
+
+.project-footer .category{
+    color: grey;
+    display: block;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.project-footer .amount{
+    color: black;
+    font-weight: 500;
+    text-align: left;
+    float:left;
+}
+
+.project-footer .percentage{
+    color: grey;
+    text-align: right;
+    float: right;
+    padding-bottom: 5px;
+}
+
+.progress{
+    clear: both;
+    
+}
+
+.grid-category-1, .grid-category-2, .grid-category-3 {
+    border: 1px solid rgb(212, 212, 212);
+    padding: 40px;
+}
+
+.grid-category-1:hover, .grid-category-2:hover, .grid-category-3:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+.grid-user-1, .grid-user-2, .grid-user-3{
+    border: 1px solid rgb(212, 212, 212);
+    padding: 40px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.grid-user-1:hover, .grid-user-2:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+
+.grid-users{
+    background-color: white;
+    color: black;
+    font-size: 26px;
+    font-weight: 500;
+    grid-column: span 4;
+}
+
+.grid-users span {
+    font-size: 15px;
+    font-weight: 0;
+    color: rgb(88, 88, 88);
+}
+
+
+.wrapper {
+    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06);
+}
+.header {
+    padding: 30px 30px 0;
+    text-align: center;
+}
+.header__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.header__subtitle {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #949fb0;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    margin: 15px;
+    width: 350px;
+    transition: all 0.2s ease-in-out;
+    position: initial;
+    font-size: 0.7rem;
+}
+@media screen and (max-width: 991px) {
+    .card {
+        width: 300px;
+   }
+}
+@media screen and (max-width: 767px) {
+    .card {
+        width: 100%;
+   }
+}
+.card:hover .card__inner {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+    color: white;
+}
+.card__inner {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+.card__inner:after {
+    transition: all 0.3s ease-in-out;
+}
+.card__inner .fa {
+    width: 100%;
+    margin-top: 0.25em;
+}
+.card__expander {
+    transition: all 0.2s ease-in-out;
+    background-color: #288372;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+.card__expander .fa {
+    font-size: 0.75em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.card__expander .fa:hover {
+    opacity: 0.9;
+}
+.card.is-collapsed .card__inner:after {
+    content: "";
+    opacity: 0;
+}
+.card.is-collapsed .card__expander {
+    max-height: 0;
+    min-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    opacity: 0;
+}
+.card.is-expanded .card__inner {
+    background-color: #1abc9c;
+}
+.card.is-expanded .card__inner:after {
+    content: "";
+    opacity: 1;
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 15px);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #333a45;
+}
+.card.is-expanded .card__inner .fa:before {
+    content: "\f115";
+}
+.card.is-expanded .card__expander {
+    max-height: 1000px;
+    min-height: 200px;
+    overflow: visible;
+    margin-top: 30px;
+    opacity: 1;
+}
+.card.is-expanded:hover .card__inner {
+    transform: scale(1);
+}
+.card.is-inactive .card__inner {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.card.is-inactive:hover .card__inner {
+    background-color: #949fb0;
+    transform: scale(1);
+}
+
+/************************************************************/
+
+/*                      MEDIA QUERIES                       */
+
+/*************************************************************/
+
+
+
+@media screen and (min-width: 992px) {
+    .card:nth-of-type(3n+2) .card__expander {
+        margin-left: calc(-100% - 30px);
+   }
+    .card:nth-of-type(3n+3) .card__expander {
+        margin-left: calc(-200% - 60px);
+   }
+    .card:nth-of-type(3n+4) {
+        clear: left;
+   }
+    .card__expander {
+        width: calc(300% + 60px);
+   }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .card:nth-of-type(2n+2) .card__expander {
+        margin-left: calc(-100% - 30px);
+   }
+    .card:nth-of-type(2n+3) {
+        clear: left;
+   }
+    .card__expander {
+        width: calc(200% + 30px);
+   }
+
+}
