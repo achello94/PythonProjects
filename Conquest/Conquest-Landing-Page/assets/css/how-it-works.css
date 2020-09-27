@@ -1,0 +1,415 @@
+.major {
+	text-align: center;
+}
+
+#three.main {
+	padding-top: 60px;
+}
+
+.container-howto {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-item-howto {
+    height: auto;
+
+}
+
+/***************/
+/*  Step One   */
+/***************/
+
+ .container-row-1 {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+
+.grid-item-howto-1 {
+    border-bottom-left-radius: 40px;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+    width: 95%;
+    position: relative;
+}
+
+#step-one {
+
+	justify-content: center;
+    padding-left: 20px;
+    padding-top: 10px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	font-size: 18px;
+	color: #fda28d;
+	width: 56px;
+    height: 56px;
+    padding-bottom: 10px;
+	position: absolute;
+	top: -28px;
+	left: -30px;
+	background-color: #fff
+}
+
+.individual-grid {
+    padding: 30px;
+}
+
+.individual-grid span {
+    display: block;
+	font-weight: 500;
+	font-size: 2rem;
+	padding-bottom: 10px;
+}
+
+.individual-grid p {
+	font-weight: 300;
+}
+
+/***************/
+/*  Step Two   */
+/***************/
+
+.container-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item-howto-2 {
+    border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border-right: 2px solid #fff;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+    margin-top: -1.6px;
+    margin-left: 35px;
+	width: 95%;
+	position: relative;
+}
+
+#step-two {
+
+	justify-content: center;
+    padding-left: 20px;
+    padding-top: 10px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	font-size: 18px;
+	color: #fda28d;
+	width: 56px;
+    height: 56px;
+    padding-bottom: 10px;
+	position: absolute;
+	top: -28px;
+	right: -30px;
+	background-color: #fff
+}
+
+.container-row-2 .find-out-more{
+	font-size: 0.8rem;
+	color: white;
+	padding-top: 0;
+	margin-top: -20px;
+}
+
+/***************/
+/*  Step Three   */
+/***************/
+
+.container-row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item-howto-3 {
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	margin-top: -2px;
+	width: 95%;
+    position: relative;
+ 
+}
+
+#step-three {
+
+    padding-left: 20px;
+    padding-top: 10px;
+        position: absolute;
+        top: -20px;
+        left: -28px;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #fda28d;
+        width: 56px;
+        height: 56px
+    
+}
+
+.individual-grid-3-1 {
+	grid-column: span 4;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.individual-grid-3-1 p {
+	text-align: center;
+}
+
+.individual-grid-3-2 span, .individual-grid-3-3 span, .individual-grid-3-4 span {
+	font-size: 100%;
+	font-weight: bold;
+	padding-left: 15px;
+	margin-top: -20px;
+	text-align: justify;
+}
+
+/***************/
+/*  Step Four   */
+/***************/
+
+.container-row-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item-howto-4 {
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border-right: 2px solid #fff;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	margin-top: -2px;
+	width: 95%;
+    position: relative;
+    margin-left: 35px;
+}
+
+#step-four {
+
+    padding-left: 20px;
+    padding-top: 10px;
+    position: absolute;
+    top: -20px;
+    right: -28px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fda28d;
+    width: 56px;
+    height: 56px
+
+}
+
+.individual-grid-4-1 {
+	grid-column: span 4;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.individual-grid-4-1 p {
+	text-align: center;
+}
+
+.individual-grid-4-2 span, .individual-grid-4-3 span, .individual-grid-4-4 span {
+	font-size: 100%;
+	font-weight: bold;
+	padding-left: 15px;
+	margin-top: -20px;
+	text-align: justify;
+}
+
+
+/************/
+/* STEP FIVE */
+
+.container-row-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item-howto-5 {
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	margin-top: -2px;
+	width: 95%;
+    position: relative;
+ 
+}
+
+#step-five {
+
+    padding-left: 20px;
+    padding-top: 10px;
+        position: absolute;
+        top: -20px;
+        left: -28px;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #fda28d;
+        width: 56px;
+        height: 56px
+
+}
+
+.individual-grid-5-1 img {
+	margin-left: 150px;
+}
+
+.bubble {
+	transform: scale(1);
+	transition: all .5s;
+	font-size: 22px!important;
+	font-weight: 500!important
+}
+
+.bubble.animate {
+	transform: scale(1.3);
+	background-color: #ffffff!important;
+	color: rgb(17, 147, 90)!important
+}
+
+#four .actions.special {
+	margin: 0;
+	padding-bottom: 40px;
+
+}
+
+/***************************************************/
+
+/* 				Media Queries					   */
+
+/***************************************************/
+
+/* Large Screens */
+@media screen and (min-width:1200px) {
+
+}
+
+/* Medium Screens */
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+	
+}
+
+/* Small Screens */
+
+@media screen and (min-width:600px) and (max-width:991px) {
+	.container-row-1, .container-row-2, .container-row-3, .container-row-4, .container-row-5 {
+		grid-template-columns: 1fr;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.grid-item-howto {
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.individual-grid {
+		grid-column: span 4;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.container-row-3 .individual-grid.individual-grid-3-2 img {
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	.individual-grid p {
+		text-align: center;
+
+		
+		
+	}
+
+	.individual-grid span {
+		text-align: center;
+		
+	}
+
+	.individual-grid img {
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
+
+/* X-Small Screens */
+
+@media screen and (max-width:599px) {
+
+	.container-row-1, .container-row-2, .container-row-3, .container-row-4, .container-row-5 {
+		grid-template-columns: 1fr;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.grid-item-howto {
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.individual-grid {
+		grid-column: span 4;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.individual-grid-4-2 img {
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.individual-grid p {
+		text-align: center;
+	}
+
+	.individual-grid span {
+		text-align: center;
+	}
+
+	.individual-grid img {
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
